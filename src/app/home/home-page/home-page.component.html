@@ -1,15 +1,15 @@
 <div class="container">
-  <div class="w-100 text-center mb-5 mt-5"><h1>Crew List</h1></div>
+  <div class="w-100 text-center mb-5 mt-5"><h1>{{'crewList' | translate}}</h1></div>
     <table class="table table-bordered ">
         <thead>
           <tr class="headRow">
-            <th class="headNo" style="width: 4%"  scope="col">#</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col">Nationality</th>
-            <th scope="col">Title</th>
-            <th scope="col">Edit Page</th>
-            <th scope="col">Details</th>
+            <th class="headNo" scope="col">#</th>
+            <th scope="col">{{'firstName' | translate}}</th>
+            <th scope="col">{{'lastName' | translate}}</th>
+            <th scope="col">{{'nationality' | translate}}</th>
+            <th scope="col">{{'title' | translate}}</th>
+            <th scope="col">{{'edit' | translate}}</th>
+            <th scope="col">{{'details' | translate}}</th>
           </tr>
         </thead>
         <tbody>
@@ -22,7 +22,7 @@
             <td [innerText]="crew.nationality"></td>
             <td [innerText]="crew.title"></td>
             <td> 
-            <button class="btn btn-outline-success" style="width:120px;" (click)="openDialog(crew.id,crew.certificates)">Edit</button>
+            <button class="btn btn-outline-success" style="width:120px;" (click)="openDialog(crew.id,crew.certificates)">{{'edit' | translate}}</button>
             </td>
             <td>
               <a
@@ -30,10 +30,11 @@
                 class="btn btn-outline-primary"
                 routerLink="./{{ crew.id }}"
               >
-            Details Page
+              {{'detailsPage' | translate}}
             </a>
             </td>
           </tr>
         </tbody>
       </table>
+
 </div>

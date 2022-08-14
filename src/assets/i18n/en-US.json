@@ -1,0 +1,21 @@
+{
+    "choose_language": "Choose Language",
+    "language.english": "English",
+    "language.french": "French",
+    "language.portuguese": "Portuguese ",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "title": "Title",
+    "nationality": "Nationality",
+    "home" : "Home",
+    "languages" : "Languages",
+    "edit" : "Edit",
+    "details" : "Details",
+    "detailsPage": "Details Page",
+    "crewList" : "CREW LIST",
+    "crewdetails" : "CREW DETAILS",
+    "certificates" : "Certificates",
+    "certificateName" : "Certificate Name",
+    "certificateDate" : "Certificate Date",
+    "close" : "Close"
+}

@@ -23,8 +23,8 @@ export interface CertificateModel{
           this.crewList= [
               {
                   id: 1,
-                  firstName: "Jashua",
-                  lastName: "King",
+                  firstName: "Katheryn",
+                  lastName: "Winnick",
                   nationality: "Canada",
                   title: "Captain",
                   certificates: [
@@ -36,12 +36,24 @@ export interface CertificateModel{
                       name: "Indian Database of Seafarers",
                       date: "Aug 2015"
                     },
+                    {
+                      name: "National Certificate of Compatence and endrosement",
+                      date: "Oct 2015"
+                    },
+                    {
+                      name: "Flag State Endorsement of Recognition",
+                      date: "Feb 2016"
+                    },
+                    {
+                      name: "Medical First Aid",
+                      date: "May 2016"
+                    },
                   ]
                 },
                 {
                   id: 2,
-                  firstName: "Hasan",
-                  lastName: "Kaplan",
+                  firstName: "Ahmet",
+                  lastName: "Çalık",
                   nationality: "Turkey",
                   title: "2nd Captain",
                   certificates: [
@@ -53,12 +65,24 @@ export interface CertificateModel{
                       name: "Continuous Discharge Certificate",
                       date: "Nov 2017"
                     },
+                    {
+                      name: "Survival Craft and Rescue Boats",
+                      date: "Dec 2017"
+                    },
+                    {
+                      name: "Advanced Fire Fighting",
+                      date: "Jan 2018"
+                    },
+                    {
+                      name: "Medical Fitness",
+                      date: "Nov 2018"
+                    },
                   ]
                 },
                 {
                   id: 3,
-                  firstName: "Enner",
-                  lastName: "Liverpool",
+                  firstName: "David",
+                  lastName: "Beckham",
                   nationality: "England",
                   title: "3rd Captain",
                   certificates: [
@@ -69,6 +93,18 @@ export interface CertificateModel{
                     {
                       name: "Course Completion Certificate",
                       date: "Oct 2019"
+                    },
+                    {
+                      name: "Basic Safety Familiarisation",
+                      date: "Dec 2019"
+                    },
+                    {
+                      name: "Advanced Fire Fighting",
+                      date: "Jan 2020"
+                    },
+                    {
+                      name: "Medical Fitness",
+                      date: "June 2020 "
                     },
                   ]
                 },
@@ -87,7 +123,19 @@ export interface CertificateModel{
                       {
                         name: "Continuous Discharge Certificate",
                         date: "Oct 2021"
-                      }
+                      },
+                      {
+                        name: "Ship Spesific Familiarisation",
+                        date: "Apr 2021"
+                      },
+                      {
+                        name: "Security Familiarisation",
+                        date: "Oct 2021"
+                      },
+                      {
+                        name: "Medical Fitness",
+                        date: "Nov 2021 "
+                      },
                     ]
                   }
           ]

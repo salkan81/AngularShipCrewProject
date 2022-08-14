@@ -1,5 +1,6 @@
 <div class="container">
-    <table class="table">
+  <div class="w-100 text-center mb-5 mt-5"><h1>Crew List</h1></div>
+    <table class="table table-bordered">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -24,7 +25,12 @@
             <button class="btn btn-primary">Edit</button>
             </td>
             <td>
-                <button class="btn btn-success">Detail Page</button>
+              <a
+                class="btn btn-success"
+                routerLink="./{{ crew.id }}"
+              >
+            Details Page
+            </a>
             </td>
           </tr>
         </tbody>

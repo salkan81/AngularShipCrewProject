@@ -1,0 +1,15 @@
+    <div class="w-100 text-center mb-3 mt-5"><h3>Certificates</h3></div>
+    <table class="table table-bordered" >
+    <thead>
+      <tr>
+        <th scope="col">Certificate Name</th>
+        <th scope="col">Certificate Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of getCertificates()">
+        <td>{{item.name}}</td>
+        <td>{{item.date}}</td>
+      </tr>
+    </tbody>
+  </table>

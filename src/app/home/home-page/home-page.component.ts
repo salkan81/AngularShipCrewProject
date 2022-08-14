@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Model } from 'src/app/model';
+import { MatDialog } from '@angular/material/dialog';
+import { CertificateModel, Model } from 'src/app/model';
+import { ModalComponent } from './modal/modal.component';
 
 @Component({
   selector: 'app-home-page',
@@ -8,7 +10,11 @@ import { Model } from 'src/app/model';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+
+  openDialog(crewId: number, crewCertificates: CertificateModel[]) {
+    this.dialog.open(ModalComponent,{ data: {id: crewId, modalCertif:  crewCertificates}});
+  }
   
   model = new Model()
 

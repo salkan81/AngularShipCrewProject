@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './home-page.component';
 import { RouterModule, Routes } from '@angular/router';
-import { CrewCardPageComponent } from './crew-card-page/crew-card-page.component';
+import { CertificatesModule } from './certificates/certificates.module';
+import { ModalModule } from './modal/modal.module';
 
 const routes: Routes = [
   {
@@ -13,7 +14,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [HomePageComponent],
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [CommonModule, RouterModule.forChild(routes),CertificatesModule,ModalModule],
   exports: [HomePageComponent],
 })
 export class HomePageModule {}

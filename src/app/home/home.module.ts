@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutsModule } from './layouts/layouts.module';
 import { HomePageModule } from './home-page/home-page.module';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -9,7 +10,7 @@ import { HomePageModule } from './home-page/home-page.module';
     
   ],
   imports: [
-    CommonModule, LayoutsModule, HomePageModule
+    CommonModule, LayoutsModule, HomePageModule,MatDialogModule
   ],
   exports: [LayoutsModule, HomePageModule]
 })

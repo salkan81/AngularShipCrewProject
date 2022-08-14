@@ -1,9 +1,9 @@
 <div class="container">
   <div class="w-100 text-center mb-5 mt-5"><h1>Crew List</h1></div>
-    <table class="table table-bordered">
+    <table class="table table-bordered ">
         <thead>
-          <tr>
-            <th scope="col">#</th>
+          <tr class="headRow">
+            <th class="headNo" style="width: 4%"  scope="col">#</th>
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
             <th scope="col">Nationality</th>
@@ -22,11 +22,12 @@
             <td [innerText]="crew.nationality"></td>
             <td [innerText]="crew.title"></td>
             <td> 
-            <button class="btn btn-primary">Edit</button>
+            <button class="btn btn-outline-success" style="width:120px;" (click)="openDialog(crew.id,crew.certificates)">Edit</button>
             </td>
             <td>
               <a
-                class="btn btn-success"
+                style="width:120px;"
+                class="btn btn-outline-primary"
                 routerLink="./{{ crew.id }}"
               >
             Details Page
